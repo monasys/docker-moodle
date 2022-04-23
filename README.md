@@ -23,7 +23,7 @@ $ docker-compose up -d
 * Application data is shared in `./volumes/moodledata`
 
 The Docker containers run as the `root` user by default, therefore files created within the container will be owned by `root`.
-This can prove to be a problem with development as you will not be able to modify the shared files on your host. Moodle code is static, however, meaning that the container will not make any changes to it after the initial install, and as such we can change the ownership of .`/volumes/moodle` back to that of our host.
+This can prove to be a problem with development as you will not be able to modify the shared files on your host. Moodle code is static, however, meaning that the container will not make any changes to it after the initial install, and as such we can change the ownership of `./volumes/moodle` back to that of our host.
 
 ```console
 $ sudo chown -R user:user volumes/moodle
