@@ -1,4 +1,4 @@
-FROM bitnami/moodle
+FROM bitnami/moodle:4
 
 RUN mv /opt/bitnami/php/etc/php.ini-development /opt/bitnami/php/etc/php.ini
 
